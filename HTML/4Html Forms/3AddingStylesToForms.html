@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Form Input Types</title>
+    </head>
+    <style>
+        #register{
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .inputlable{
+            /* margin: 0; */
+            margin-bottom: 4px;
+            margin-top: 12px;
+        }
+        .inputitem{
+            width: 100%;
+        }
+        #checkterms{
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    </style>
+    <body style="background-color: aliceblue;">
+        <h1 style="text-align: center;">SIGNUP</h1>
+        <form id="register">
+            <div>
+                <p class="inputlable">Full Name:</p>
+                <input class="inputitem" type="text" name="full-name">
+            </div>
+            <div>
+                <p class="inputlable">Email:</p>
+                <input class="inputitem" type="email" name="email">
+            </div>
+            <div>
+                <p class="inputlable">Password:</p>
+                <input class="inputitem" type="password" name="password">
+            </div>
+            <div>
+                <p class="inputlable">Confirm Password:</p>
+                <input class="inputitem" type="password" name="confirm-password">
+            </div>
+            <div>
+                <p class="inputlable">Gender:</p>
+                <input type="radio" name="male" value="male">
+                Male</input>
+                <input type="radio" name="female" value="female">
+                Female</input>
+                <input type="radio" name="others" value="others">
+                Others</input>
+            </div>
+            <div>
+                <p class="inputlable">Security Question:</p>
+                <select name="security question">
+                   <option value="first-pet-name">What is your pet name?</option> 
+                   <option value="nick-name">What is your nickname?</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="answer" rows="6" cols="30"></textarea>
+            </div>
+            <div>
+                <input id="checkterms" type="checkbox" name="terms-conditions" value="accecpt">I agree terms and conditions</input>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>

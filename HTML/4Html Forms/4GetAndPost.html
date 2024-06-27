@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Get And Post In Forms</title>
+    </head>
+    <style>
+        .input{
+            width: 100%;
+            /* margin: 0; */
+        }
+        #reg{
+            width: 300px;
+            background-color: lightskyblue;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #check{
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        .info{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px;
+        }
+    </style>
+    <body style="background-color: aliceblue;">
+        <h1 style="text-align: center;">SIGN UP</h1>
+        <!-- <form id="reg" method="get"> -->
+        <form id="reg" method="post">
+            <div>
+                <p class="info">Full Name:</p>
+                <input class="input" type="text" name="full-name">
+            </div>
+            <div>
+                <p class="info">Email:</p>
+                <input class="input" type="email" name="email">
+            </div>
+            <div>
+                <p class="info">Password:</p>
+                <input class="input" type="password" name="password">
+            </div>
+            <div>
+                <p class="info">Confirm Password:</p>
+                <input class="input" type="password" name="confirm-password">
+            </div>
+            <div>
+                <p class="info">Gender:</p>
+                <input type="radio" name="male" value="male">Male
+                <input type="radio" name="female" value="female">Female
+                <input type="radio" name="others" value="others">Others
+            </div>
+            <div>
+                <p class="info">Sequrity Question</p>
+                <select>
+                    <option>What is your pet name?</option>
+                    <option>What is your school name?</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="answers" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input id="check" type="checkbox" type="checkbox" name="term-conditions" value="accecpt">I agree Terms And Conditions
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>

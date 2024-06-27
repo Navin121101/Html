@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Span table rows and columns</title>
+    </head>
+    <style>
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 600px;
+            background-color: aliceblue;
+        }
+        td,th{
+            padding: 14px;
+        }
+    </style>
+    <body>
+        <table>
+            <caption style="padding-bottom: 24px;">My Time Table</caption>
+            <tr>
+                <td rowspan="7">Hours</td>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thur</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>Tamil</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Social</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Tamil</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Social</td>
+            </tr>
+            <tr>
+                <td>Tamil</td>
+                <td>Social</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center;">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>Tamil</td>
+                <td>English</td>
+                <td>Social</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Tamil</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Social</td>
+            </tr>
+        </table>
+    </body>
+</html>

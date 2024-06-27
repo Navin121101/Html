@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <style>
+        #nav{
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 24px;
+        }
+        .spa{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #form{
+            background-color: white;
+            width: 250px;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px solid black;
+        }
+        
+        .input{
+            border: 0;
+            padding-top: 16px;
+            padding-right: 12px;
+            margin-bottom: 36px;
+            border-bottom: 1px solid black;
+        }
+        #submit{
+            background-color: darkblue;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 14px;
+            padding-right: 14px;
+            font-size: 16px;
+            color: white;
+            border: none;
+        }
+    </style>
+    <body style="margin: 0; background-color: whitesmoke;">
+        <header>
+            <nav id="nav">
+                <span class="spa"><a href="project.html">TRIPS</a></span>
+                <span class="spa"><a href="about.html">ABOUT</a></span>
+                <span class="spa"><a href="contact.html">CONTACT</a></span>
+            </nav>
+        </header>
+        <h3 style="text-align: center;">CONTACT ME</h3>
+        <form id="form">
+            <div>
+                <div>
+                    <input class="input" type="text" name="full-name" placeholder="Full Name">
+                </div>
+                <div>
+                    <input class="input" type="email" name="email" placeholder="Email"> 
+                </div>
+                <div>
+                    <input class="input" type="text" name="number" placeholder="Contact Number">
+                </div>
+            </div>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>New Attribute In forms</title>
+    </head>
+    <style>
+        .heading{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px;
+        }
+        .input{
+            width: 100%;
+        }
+        #reg{
+            width: 300px;
+            background-color: aquamarine;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #checkterms{
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    </style>
+    <body>
+        <form id="reg">
+            <div>
+                <p class="heading">Full Name:</p>
+                <input class="input" type="text" name="fullname" placeholder="fullname" autofocus> 
+                <!-- here we have added placeholder which helps to show fullname in typingbox -->
+                <!-- auto focus helps in when ever we go inside the full name box will have typing curser -->
+            </div>
+            <div>
+                <p class="heading">Password:</p>
+                <input class="input" type="password" name="password" placeholder="password">
+            </div>
+            <div>
+                <p class="heading">Confirm Password:</p>
+                <input class="input" type="password" name="confirmpassword" placeholder="confirmpassword">
+            </div>
+            <div>
+                <p class="heading">Gender:</p>
+                <input type="radio" name="male" value="male">Male
+                <input type="radio" name="female" value="female">Female
+                <input type="radio" name="others" value="others">Others
+            </div>
+            <div>
+                <p class="heading">Sequrity Question:</p>
+                <select name="sequrity question" multiple>
+                    <!-- multiple attribut use to select more than one value using comand button we can select -->
+                    <option>What is your pet?</option>
+                    <option>Where are you?</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="answer" rows="6" cols="30"></textarea>
+            </div>
+            <div>
+                <input id="checkterms" type="checkbox" name="termas-conditions">Agree terms and conditions
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>

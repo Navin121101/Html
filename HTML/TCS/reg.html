@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Registration</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container">
+        <h2>VISITOR REGISTRATION</h2>
+        <form id="registrationForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required><br><br>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required><br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="number" id="mobile" name="mobile" required><br><br>
+
+            <label for="gender">Gender</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <label for="city">City</label>
+            <select id="city" name="city" required>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Chicago">Chicago</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+
+            <button type="submit">Register</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="reg.js"></script>
+</body>
+</html>
